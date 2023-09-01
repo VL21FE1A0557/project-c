@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title><style>
+body{
+background-image:url("https://i.stack.imgur.com/jGlzr.png");
+background-position:cover;}</style>
+
+</head>
+<body>
+    <h1>Search Results</h1>
+    <div id="results-container"></div>
+
+    <script>
+       
+       const arr = [
+            {
+                title: "Computer Science Engineering (CSE)",
+                path: {
+                    level1: "After 10th: Complete 10th grade with good marks.",
+                    level2: "After 12th: Choose the Science stream with Physics and Mathematics.",
+                    level3: "Undergraduate: Pursue a BTech degree in Computer Science Engineering.",
+                },
+                avgsal: "$55,000",
+                bestcollege: "JNTUK",
+                jobfields: [
+                    {
+                        field: "Software Developer",
+                        certifications: [
+                            "Certified Software Development Associate (CSDA)",
+                            "Certified Software Development Professional (CSDP)",
+                            "AWS Certified Developer - Associate",
+                        ],
+                    },
+                    {
+                        field: "Data Scientist",
+                        certifications: [
+                            "Certified Analytics Professional (CAP)",
+                            "Microsoft Certified: Azure AI Engineer Associate",
+                            "Data Science Professional Certificate (Coursera)",
+                        ],
+                    },
+                    {
+                        field: "Web Developer",
+                        certifications: [
+                            "Certified Web Developer (CIW)",
+                            "Microsoft Certified: Azure Web Developer Associate",
+                            "Full Stack Web Developer Nanodegree (Udacity)",
+                        ],
+                    },
+                ],
+                description: "Computer Science Engineering involves the study of algorithms, data structures, and software development.",
+                jobOutlook: "The job outlook for CSE graduates is promising with diverse opportunities in tech industries.",
+                topSkills: [
+                    "Programming (Java, Python, etc.)",
+                    "Database Management",
+                    "Machine Learning",
+                    "Web Development",
+                ],
+                relatedCareers: ["Data Analyst", "Network Engineer", "Cybersecurity Analyst"],
+            },
+   
+
+  
+  
+{
+        title: "Aeronautical Engineer",
+        path: {
+            level1: "After 10th: Complete 10th grade with good marks.",
+            level2: "After 12th: Choose the Science stream with Physics and Mathematics.",
+            level3: "Undergraduate: Pursue a BTech degree in Aeronautical Engineering.",
+        },
+        avgsal: "₹8,00,000",
+        bestcollege: "IIT Bombay",
+        jobfields: [
+            {
+                field: "Aircraft Design Engineer",
+                certifications: [
+                    "Aircraft Maintenance Engineering License",
+                    "Aircraft Structures License",
+                ],
+            },
+            {
+                field: "Aerospace Systems Engineer",
+                certifications: [
+                    "Certified Aerospace Systems Professional (CASP)",
+                    "Aerospace Engineering License",
+                ],
+            },
+        ],
+        description: "Aeronautical Engineers design and test aircraft and spacecraft.",
+        jobOutlook: "The job outlook for Aeronautical Engineers is promising in the aerospace industry.",
+        topSkills: [
+            "Aircraft Design",
+            "Aerospace Systems",
+            "Flight Dynamics",
+            "Aircraft Propulsion",
+        ],
+        relatedCareers: ["Aerospace Engineer", "Mechanical Engineer", "Aircraft Maintenance Engineer"],
+    },
+    {
+        title: "Aerospace Engineer",
+        path: {
+            level1: "After 10th: Complete 10th grade with good marks.",
+            level2: "After 12th: Choose the Science stream with Physics and Mathematics.",
+            level3: "Undergraduate: Pursue a BTech degree in Aerospace Engineering.",
+        },
+        avgsal: "₹7,50,000",
+        bestcollege: "IIT Madras",
+        jobfields: [
+            {
+                field: "Aircraft Systems Engineer",
+                certifications: [
+                    "Certified Aerospace Systems Engineer (CASE)",
+                    "Aircraft Systems Engineering License",
+                ],
+            },
+            {
+                field: "Rocket Propulsion Engineer",
+                certifications: [
+                    "Certified Rocket Propulsion Engineer",
+                    "Rocket Propulsion Engineering License",
+                ],
+            },
+        ],
+        description: "Aerospace Engineers design and develop aircraft, spacecraft, and related systems.",
+        jobOutlook: "Aerospace Engineers have good career prospects in the aerospace and defense industries.",
+        topSkills: [
+            "Aircraft Design",
+            "Rocket Propulsion",
+            "Aerospace Systems",
+            "Flight Mechanics",
+        ],
+        relatedCareers: ["Aeronautical Engineer", "Mechanical Engineer", "Aircraft Design Engineer"],
+    },
+    {
+        title: "App Developer",
+        path: {
+            level1: "After 10th: Complete 10th grade with good marks.",
+            level2: "After 12th: Choose the Computer Science stream.",
+            level3: "Undergraduate: Pursue a BTech degree in Computer Science or Software Engineering.",
+        },
+        avgsal: "₹6,00,000",
+        bestcollege: "IIT Delhi",
+        jobfields: [
+            {
+                field: "Mobile App Developer",
+                certifications: [
+                    "Certified Mobile App Developer (CMAD)",
+                    "Google Associate Android Developer",
+                    "iOS App Development Nanodegree (Udacity)",
+                ],
+            },
+            {
+                field: "Web App Developer",
+                certifications: [
+                    "Certified Web App Developer",
+                    "Full Stack Web Developer Certification",
+                ],
+            },
+        ],
+        description: "App Developers create software applications for mobile and web platforms.",
+        jobOutlook: "App Developers are in demand due to the growth of mobile and web-based services.",
+        topSkills: [
+            "Programming (Java, Swift, JavaScript, etc.)",
+            "Mobile App Development",
+            "Web Development",
+            "UI/UX Design",
+        ],
+        relatedCareers: ["Software Engineer", "UI/UX Designer", "Frontend Developer"],
+    },
+    {
+        title: "Archaeologist",
+        path: {
+            level1: "After 10th: Complete 10th grade with good marks.",
+            level2: "After 12th: Pursue a Bachelor's degree in Archaeology or a related field.",
+            level3: "Postgraduate: Specialize in a specific area of Archaeology through a Master's or Ph.D. program.",
+        },
+        avgsal: "₹5,00,000",
+        bestcollege: "Deccan College Postgraduate and Research Institute, Pune",
+        jobfields: [
+            {
+                field: "Field Archaeologist",
+                certifications: [
+                    "Certified Field Archaeologist",
+                    "Archaeological Excavation License",
+                ],
+            },
+            {
+                field: "Museum Curator",
+                certifications: [
+                    "Certified Museum Curator",
+                    "Archaeological Conservation Specialist",
+                ],
+            },
+        ],
+        description: "Archaeologists study human history and prehistory through excavation and analysis of artifacts.",
+        jobOutlook: "Archaeologists can work in academia, museums, government agencies, or cultural resource management firms.",
+        topSkills: [
+            "Field Research",
+            "Artifact Analysis",
+            "Cultural Preservation",
+            "Archaeological Site Management",
+        ],
+        relatedCareers: ["Anthropologist", "Historian", "Conservator"],
+    },
+    {
+        title: "Architect",
+        path: {
+            level1: "After 10th: Complete 10th grade with good marks.",
+            level2: "After 12th: Pursue a Bachelor's degree in Architecture.",
+            level3: "Internship: Complete a mandatory internship to gain practical experience.",
+        },
+        avgsal: "₹6,50,000",
+        bestcollege: "Indian Institute of Technology (IIT) Roorkee",
+        jobfields: [
+            {
+                field: "Residential Architect",
+                certifications: [
+                    "Certified Residential Architect",
+                    "Sustainable Architecture Certification",
+                ],
+            },
+            {
+                field: "Commercial Architect",
+                certifications: [
+                    "Certified Commercial Architect",
+                    "Urban Planning and Design Certification",
+                ],
+            },
+        ],
+        description: "Architects design and plan buildings, ensuring functionality, safety, and aesthetics.",
+        jobOutlook: "Architects are needed for construction projects, from homes to commercial structures.",
+        topSkills: [
+            "Architectural Design",
+            "Construction Planning",
+            "Sustainable Architecture",
+            "AutoCAD Proficiency",
+        ],
+        relatedCareers: ["Interior Designer", "Urban Planner", "Civil Engineer"],
+    },
+
+  
+  
+{
+    title: "Artist",
+    path: {
+      level1: "Pursue art as a hobby and develop your skills.",
+      level2: "Enroll in art classes during high school.",
+      level3: "Obtain a Bachelor of Fine Arts (BFA) degree.",
+    },
+    avgsal: "₹5,00,000 per annum",
+    bestcollege: ["National Institute of Fine Arts", "JJ School of Arts"],
+    jobfields: [
+     {field: "Painter",  certifications: ["None required"],},
+       {field: "Illustrator",  certifications: ["None required"],},
+      {field:  "Graphic Designer",  certifications: ["None required"],},
+    ],
+  
+    description: "Artists create visual art, such as paintings, drawings, and sculptures, to express ideas and emotions.",
+    jobOutlook: "Competitive, but passionate artists can find opportunities in galleries, museums, and freelance work.",
+    topSkills: [
+      "Creativity",
+      "Fine Motor Skills",
+      "Attention to Detail",
+    ],
+    relatedCareers: [],
+  },
+  {
+    title: "Astronomer",
+    path: {
+      level1: "Study science subjects in high school.",
+      level2: "Pursue a Bachelor's degree in Astronomy or Physics.",
+      level3: "Earn a Ph.D. in Astronomy.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["Indian Institute of Astrophysics", "Tata Institute of Fundamental Research"],
+    jobfields: [
+      {field:  "Research Astronomer",certifications: ["None required, but a Ph.D. is common for research roles."],},
+      {field:  "Astrophysicist",certifications: ["None required, but a Ph.D. is common for research roles."],},
+      {field:  "Planetarium Curator",certifications: ["None required, but a Ph.D. is common for research roles."],},
+    ],
+    
+    description: "Astronomers study celestial objects, such as stars, planets, and galaxies, to understand the universe's mysteries.",
+    jobOutlook: "Limited positions, primarily in research and academia.",
+    topSkills: [
+      "Analytical Thinking",
+      "Math Skills",
+      "Research",
+    ],
+    relatedCareers: [],
+  },
+  {
+    title: "Biomedical Engineer",
+    path: {
+      level1: "Complete 10th grade with a focus on science and math.",
+      level2: "Pursue the Science stream in 12th grade.",
+      level3: "Earn a Bachelor's degree in Biomedical Engineering.",
+    },
+    avgsal: "₹6,50,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "All India Institute of Medical Sciences (AIIMS)"],
+    jobfields: [
+       {field: "Biomedical Engineer",certifications: ["Professional Engineer (PE) license may be beneficial."],},
+       {field: "Clinical Engineer",certifications: ["Professional Engineer (PE) license may be beneficial."],},
+       {field: "Medical Device Designer",certifications: ["Professional Engineer (PE) license may be beneficial."],},
+    ],
+    
+    description: "Biomedical engineers design and create medical equipment, devices, and software to improve healthcare.",
+    jobOutlook: "Growing demand due to advancements in healthcare technology.",
+    topSkills: [
+      "Problem Solving",
+      "Technical Proficiency",
+      "Biological Knowledge",
+    ],
+    relatedCareers: [],
+  },
+    {title: "Business Manager",
+    path: {
+      level1: "Complete 10th grade with a strong academic record.",
+      level2: "Pursue commerce in 12th grade.",
+      level3: "Earn a Bachelor's degree in Business Administration (BBA) or related field.",
+    },
+    avgsal: "₹7,00,000 per annum",
+    bestcollege: ["Indian Institutes of Management (IIMs)", "XLRI - Xavier School of Management"],
+    jobfields: [
+       {field: "Business Manager",certifications: ["Certified Business Manager (CBM)", "Certified Marketing Manager (CMM)"],},
+      { field: "Marketing Manager",certifications: ["Certified Business Manager (CBM)", "Certified Marketing Manager (CMM)"],},
+       {field: "Operations Manager",certifications: ["Certified Business Manager (CBM)", "Certified Marketing Manager (CMM)"],},
+    ],
+    
+    description: "Business managers oversee and coordinate various aspects of a company's operations to achieve its goals.",
+    jobOutlook: "Strong demand for skilled business managers across industries.",
+    topSkills: [
+      "Leadership",
+      "Problem Solving",
+      "Strategic Planning",
+    ],
+    relatedCareers: ["Entrepreneur", "Financial Analyst", "Human Resources Manager"],
+  },
+  {
+    title: "Chef",
+    path: {
+      level1: "Start cooking as a hobby and gain culinary skills.",
+      level2: "Pursue a diploma or degree in Culinary Arts.",
+      level3: "Work in kitchens to gain experience and refine skills.",
+    },
+    avgsal: "₹5,00,000 per annum",
+    bestcollege: ["Institute of Hotel Management (IHM)", "Culinary Institute of America (CIA)"],
+    jobfields: [
+       {field: "Sous Chef",certifications: ["Certified Executive Chef (CEC)", "Certified Master Chef (CMC)"],},
+      {field: "Executive Chef",certifications: ["Certified Executive Chef (CEC)", "Certified Master Chef (CMC)"],},
+       {field: "Pastry Chef",certifications: ["Certified Executive Chef (CEC)", "Certified Master Chef (CMC)"],},
+    ],
+    
+    description: "Chefs prepare and cook food in restaurants, hotels, and other food service establishments.",
+    jobOutlook: "Demand for skilled chefs remains steady in the culinary industry.",
+    topSkills: [
+      "Culinary Expertise",
+      "Creativity",
+      "Time Management",
+    ],
+    relatedCareers: ["Food Critic", "Restaurant Manager", "Food Stylist"],
+  },
+  {
+    title: "Chemical Engineer",
+    path: {
+      level1: "Excel in science and math subjects during 10th grade.",
+      level2: "Choose the Science stream with Chemistry in 12th grade.",
+      level3: "Pursue a Bachelor's degree in Chemical Engineering.",
+    },
+    avgsal: "₹6,50,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "National Institute of Technology (NITs)"],
+    jobfields: [
+      { field: "Chemical Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+       {field: "Process Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+      {field:  "Environmental Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+    ],
+   
+    description: "Chemical engineers design and oversee chemical processes and production for various industries.",
+    jobOutlook: "Chemical engineers are in demand across sectors, including manufacturing, energy, and pharmaceuticals.",
+    topSkills: [
+      "Analytical Skills",
+      "Problem Solving",
+      "Chemical Knowledge",
+    ],
+    relatedCareers: ["Materials Scientist", "Petroleum Engineer", "Pharmaceutical Scientist"],
+  },
+  {
+    title: "Civil Engineer",
+    path: {
+      level1: "Complete 10th grade with good marks in science and mathematics.",
+      level2: "Choose the Science stream in 12th grade with Physics and Mathematics.",
+      level3: "Pursue a Bachelor's degree in Civil Engineering.",
+    },
+    avgsal: "₹6,00,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "Delhi Technological University (DTU)"],
+    jobfields: [
+      {field:  "Structural Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+       {field: "Transportation Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+      {field:  "Environmental Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+    ],
+   
+    description: "Civil engineers plan, design, and oversee the construction and maintenance of infrastructure projects.",
+    jobOutlook: "Civil engineering offers good job prospects, especially in the field of infrastructure development.",
+    topSkills: [
+      "Project Management",
+      "Structural Analysis",
+      "AutoCAD",
+    ],
+    relatedCareers: ["Architect", "Construction Manager", "Geotechnical Engineer"],
+  },
+  {
+    title: "Cinematographer",
+    path: {
+      level1: "Begin by exploring photography and videography as a hobby.",
+      level2: "Pursue a degree or diploma in Cinematography or Film Production.",
+      level3: "Gain experience by working on film projects and building a portfolio.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["Film and Television Institute of India (FTII)", "American Film Institute (AFI)"],
+    jobfields: [
+       {field: "Director of Photography", certifications: ["Certified Cinematographer (CC)"],},
+       {field: "Camera Operator", certifications: ["Certified Cinematographer (CC)"],},
+       {field: "Film Editor", certifications: ["Certified Cinematographer (CC)"],},
+    ],
+   
+    description: "Cinematographers are responsible for capturing the visual elements of a film or video production.",
+    jobOutlook: "Cinematographers are in demand in the film and entertainment industry.",
+    topSkills: [
+      "Visual Storytelling",
+      "Camera Operation",
+      "Lighting Techniques",
+    ],
+    relatedCareers: ["Film Director", "Film Producer", "Video Editor"],
+  },
+  {
+    title: "Data Analyst",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in mathematics and computer science.",
+      level2: "Pursue a Bachelor's degree in Statistics, Computer Science, or a related field.",
+      level3: "Develop data analysis skills through internships or projects.",
+    },
+    avgsal: "₹5,50,000 per annum",
+    bestcollege: ["Indian Statistical Institute (ISI)", "Indian Institutes of Technology (IITs)"],
+    jobfields: [
+       {field: "Business Analyst", certifications: ["Certified Data Analyst (CDA)", "Data Science Certification (Coursera)"],},
+       {field: "Market Research Analyst" ,certifications: ["Certified Data Analyst (CDA)", "Data Science Certification (Coursera)"],},
+       {field: "Financial Analyst", certifications: ["Certified Data Analyst (CDA)", "Data Science Certification (Coursera)"],},
+    ],
+   
+    description: "Data analysts collect, process, and analyze data to provide insights for decision-making.",
+    jobOutlook: "Data analysts are in demand across industries for data-driven decision-making.",
+    topSkills: [
+      "Data Analysis Tools (Excel, Python, etc.)",
+      "Statistical Analysis",
+      "Data Visualization",
+    ],
+    relatedCareers: ["Data Scientist", "Machine Learning Engineer", "Data Engineer"],
+  },
+  {
+    title: "Data Scientist",
+    path: {
+      level1: "Excel in mathematics and computer science during 10th grade.",
+      level2: "Pursue a Bachelor's degree in Data Science, Computer Science, or a related field.",
+      level3: "Build a strong portfolio by working on data-driven projects.",
+    },
+    avgsal: "₹7,50,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "Indian Statistical Institute (ISI)"],
+    jobfields: [
+     { field:  "Machine Learning Engineer", certifications: ["Certified Data Scientist (CDS)", "Machine Learning Certification (Coursera)"],},
+      { field: "Big Data Analyst", certifications: ["Certified Data Scientist (CDS)", "Machine Learning Certification (Coursera)"],},
+       {field: "AI Research Scientist", certifications: ["Certified Data Scientist (CDS)", "Machine Learning Certification (Coursera)"],},
+    ],
+   
+    description: "Data scientists analyze complex datasets to extract valuable insights and predictions.",
+    jobOutlook: "Data science offers high-demand career opportunities in various industries.",
+    topSkills: [
+      "Machine Learning",
+      "Statistical Analysis",
+      "Data Visualization",
+    ],
+    relatedCareers: ["Data Analyst", "AI Engineer", "Data Engineer"],
+  },
+  {
+    title: "Dentist",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in biology and chemistry.",
+      level2: "Pursue the Science stream with Biology in 12th grade.",
+      level3: "Enroll in a Bachelor of Dental Surgery (BDS) program.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["Maulana Azad Institute of Dental Sciences", "Manipal College of Dental Sciences"],
+    jobfields: [
+     { field:  "General Dentist",  certifications: ["Dental License"],},
+      { field: "Orthodontist"  ,certifications: ["Dental License"],},
+      { field: "Oral Surgeon",  certifications: ["Dental License"],},
+    ],
+  
+    description: "Dentists diagnose and treat dental issues, providing oral healthcare to patients.",
+    jobOutlook: "The demand for qualified dentists is steady, with opportunities in private practice and healthcare.",
+    topSkills: [
+      "Patient Care",
+      "Dental Procedures",
+      "Oral Health Education",
+    ],
+    relatedCareers: ["Orthodontic Assistant", "Oral Health Therapist", "Dental Hygienist"],
+  },
+{
+    title: "Doctor",
+    path: {
+      level1: "Complete 10th grade with excellent marks in science and biology.",
+      level2: "Choose the Science stream with Biology in 12th grade.",
+      level3: "Pursue a Bachelor of Medicine, Bachelor of Surgery (MBBS) degree.",
+    },
+    avgsal: "₹10,00,000 per annum",
+    bestcollege: ["All India Institute of Medical Sciences (AIIMS)", "Christian Medical College (CMC)"],
+    jobfields: [
+       {field: "General Practitioner", certifications: ["Medical License"],},
+       {field: "Specialist Doctor", certifications: ["Medical License"],},
+       {field: "Surgeon", certifications: ["Medical License"],},
+    ],
+   
+    description: "Doctors diagnose, treat, and provide medical care to patients.",
+    jobOutlook: "The demand for doctors is high, and they are essential in healthcare systems.",
+    topSkills: [
+    "Medical Knowledge",
+        "Patient Care",
+       "Diagnosis and Treatment",
+    ],
+    relatedCareers: ["Nurse", "Pharmacist", "Medical Researcher"],
+  },
+  {
+    title: "Electrical Engineer",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in science and mathematics.",
+      level2: "Choose the Science stream in 12th grade with Physics and Mathematics.",
+      level3: "Pursue a Bachelor's degree in Electrical Engineering.",
+    },
+    avgsal: "₹7,00,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "National Institute of Technology (NITs)"],
+    jobfields: [
+     { field:  "Power Systems Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+    {   field: "Electronics Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+      { field: "Control Systems Engineer", certifications: ["Professional Engineer (PE) license may be beneficial."],},
+    ],
+   
+    description: "Electrical engineers design, develop, and maintain electrical systems and equipment.",
+    jobOutlook: "Electrical engineers are in demand in industries like power, electronics, and telecommunications.",
+    topSkills: [
+      "Electrical Circuit Design",
+      "Problem Solving",
+      "Automation",
+    ],
+    relatedCareers: ["Electronics Technician", "Mechanical Engineer", "Computer Engineer"],
+  },
+  {
+    title: "Engineer",
+    path: {
+      level1: "Complete 10th grade with good marks in science and mathematics.",
+      level2: "Choose the Science stream in 12th grade with a focus on the desired engineering field.",
+      level3: "Pursue a Bachelor's degree in the chosen engineering discipline.",
+    },
+    avgsal: "Salary varies by engineering discipline.",
+    bestcollege: ["Top engineering colleges based on specialization."],
+    jobfields: [
+       {field: "Mechanical Engineer",certifications: ["Professional Engineer (PE) license may be required for certain fields."],},
+       {field: "Chemical Engineer",certifications: ["Professional Engineer (PE) license may be required for certain fields."],},
+      { field: "Biomedical Engineer",certifications: ["Professional Engineer (PE) license may be required for certain fields."],},
+      
+    ],
+    
+    description: "Engineers apply scientific and mathematical principles to design and build systems, structures, and technology.",
+    jobOutlook: "Engineering offers diverse career opportunities with continuous technological advancements.",
+    topSkills: [
+      "Technical Problem Solving",
+      "Project Management",
+      "Innovative Thinking",
+    ],
+    relatedCareers: ["Technician", "Engineering Manager", "Research Scientist"],
+  },
+  {
+    title: "Entrepreneur",
+    path: {
+      level1: "Develop entrepreneurial skills by exploring business ideas and opportunities.",
+      level2: "Pursue a Bachelor's degree in Business Administration (BBA) or related field.",
+      level3: "Start a business venture or work in startups to gain experience.",
+    },
+    avgsal: "Varies significantly based on the success of the entrepreneurial venture.",
+    bestcollege: ["Top business schools or universities with entrepreneurship programs."],
+    jobfields: [ {field: "Business Owner",   certifications: ["Entrepreneurship courses and workshops can be beneficial."],},
+ {field: "Startup Founder",   certifications: ["Entrepreneurship courses and workshops can be beneficial."],},
+ {field: "Innovator",  certifications: ["Entrepreneurship courses and workshops can be beneficial."],},],
+  
+    description: "Entrepreneurs identify business opportunities and create innovative solutions.",
+    jobOutlook: "Entrepreneurship offers potential for high rewards but comes with risks.",
+    topSkills: [
+      "Creativity and Innovation",
+      "Risk Management",
+      "Business Acumen",
+    ],
+    relatedCareers: ["Business Consultant", "Venture Capitalist", "Marketing Manager"],
+  },
+  {
+    title: "Environmental Scientist",
+    path: {
+      level1: "Excel in science subjects during 10th grade.",
+      level2: "Pursue a Bachelor's degree in Environmental Science or related field.",
+      level3: "Gain experience through internships and fieldwork.",
+    },
+    avgsal: "₹5,50,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "Indian Institute of Forest Management (IIFM)"],
+    jobfields: [
+       {field: "Environmental Consultant",certifications: ["Certified Environmental Scientist (CES)"],},
+       {field: "Climate Change Analyst",certifications: ["Certified Environmental Scientist (CES)"],},
+      { field: "Conservation Scientist",certifications: ["Certified Environmental Scientist (CES)"],},
+    ],
+    
+    description: "Environmental scientists study the environment and develop solutions for conservation and sustainability.",
+    jobOutlook: "Environmental scientists play a crucial role in addressing environmental challenges.",
+    topSkills: [
+      "Environmental Research",
+      "Data Analysis",
+      "Policy Advocacy",
+    ],
+    relatedCareers: ["Ecologist", "Environmental Engineer", "Geospatial Analyst"],
+  },
+ {
+    title: "Fashion Designer",
+    path: {
+      level1: "Complete 10th grade with a focus on art and creativity.",
+      level2: "Pursue a Bachelor's degree in Fashion Design or related field.",
+      level3: "Gain experience through internships and fashion shows.",
+    },
+    avgsal: "₹4,80,000 per annum",
+    bestcollege: ["National Institute of Fashion Technology (NIFT)", "Pearl Academy"],
+    jobfields: [
+       {field: "Fashion Stylist",certifications: ["Certified Fashion Designer (CFD)"],},
+       {field: "Textile Designer",certifications: ["Certified Fashion Designer (CFD)"],},
+       {field: "Costume Designer",certifications: ["Certified Fashion Designer (CFD)"],},
+    ],
+    
+    description: "Fashion designers create clothing and accessories, following fashion trends.",
+    jobOutlook: "The fashion industry offers competitive opportunities for creative designers.",
+    topSkills: [
+      "Fashion Sketching",
+      "Creativity",
+      "Understanding of Fabrics and Trends",
+    ],
+    relatedCareers: ["Fashion Merchandiser", "Fashion Photographer", "Pattern Maker"],
+  },
+  {
+    title: "Film Director",
+    path: {
+      level1: "Develop a passion for storytelling and film production.",
+      level2: "Pursue a Bachelor's degree in Film or Cinema Studies.",
+      level3: "Gain experience by working on film sets and directing short films.",
+    },
+    avgsal: "₹7,20,000 per annum",
+    bestcollege: ["Film and Television Institute of India (FTII)", "National School of Drama (NSD)"],
+    jobfields: [ {field: "Film Director",certifications: ["Chartered Financial Analyst (CFA)", "Financial Risk Manager (FRM)"],},
+ {field:  "Assistant Director", certifications: ["Chartered Financial Analyst (CFA)", "Financial Risk Manager (FRM)"],},
+{field:  "Film Producer",certifications: ["Chartered Financial Analyst (CFA)", "Financial Risk Manager (FRM)"],},],
+    certifications: ["Film Direction Courses and Workshops"],
+    description: "Film directors oversee the creative aspects of a film, from script to screen.",
+    jobOutlook: "Film directors are essential in the entertainment industry.",
+    topSkills: [
+      "Storytelling",
+      "Cinematic Vision",
+      "Leadership",
+    ],
+    relatedCareers: ["Film Editor", "Cinematographer", "Screenwriter"],
+  },
+  {
+    title: "Financial Analyst",
+    path: {
+      level1: "Excel in mathematics during 10th grade.",
+      level2: "Pursue a Bachelor's degree in Finance, Economics, or related field.",
+      level3: "Obtain relevant certifications like Chartered Financial Analyst (CFA).",
+    },
+    avgsal: "₹9,00,000 per annum",
+    bestcollege: ["Indian Institutes of Management (IIMs)", "Delhi School of Economics"],
+    jobfields: [
+  {field:      "Investment Analyst",certifications: ["Chartered Financial Analyst (CFA)", "Financial Risk Manager (FRM)"],},
+ {field:       "Risk Analyst",certifications: ["Chartered Financial Analyst (CFA)", "Financial Risk Manager (FRM)"],},
+      { field: "Financial Consultant",certifications: ["Chartered Financial Analyst (CFA)", "Financial Risk Manager (FRM)"],},
+    ],
+    
+    description: "Financial analysts assess financial data to provide investment and financial advice.",
+    jobOutlook: "Financial analysts are in demand in the finance and investment sector.",
+    topSkills: [
+      "Financial Analysis",
+      "Data Analysis",
+      "Market Research",
+    ],
+    relatedCareers: ["Investment Banker", "Financial Planner", "Accountant"],
+  },
+  {
+    title: "Firefighter",
+    path: {
+      level1: "Complete 10th grade and maintain physical fitness.",
+      level2: "Pursue a diploma in Fire and Safety or a related field.",
+      level3: "Join a fire department as a firefighter trainee.",
+    },
+    avgsal: "₹5,00,000 per annum",
+    bestcollege: ["National Fire Service College (NFSC)", "State Fire Training Institutes"],
+    jobfields: [ {field: "Firefighter",certifications: ["Basic Firefighter Certification", "Advanced Life Support (ALS) Certification"],} , {field: "Fire Inspector",certifications: ["Basic Firefighter Certification", "Advanced Life Support (ALS) Certification"],}, { field: "Fire Captain",certifications: ["Basic Firefighter Certification", "Advanced Life Support (ALS) Certification"],},],
+    
+    description: "Firefighters respond to emergency situations to extinguish fires and provide rescue services.",
+    jobOutlook: "Firefighters play a crucial role in public safety and disaster response.",
+    topSkills: [
+      "Courage",
+      "Physical Fitness",
+      "Emergency Response",
+    ],
+    relatedCareers: ["Paramedic", "Emergency Medical Technician (EMT)", "Search and Rescue Worker"],
+  },
+  {
+    title: "Game Developer",
+    path: {
+      level1: "Start coding and developing an interest in video games.",
+      level2: "Pursue a Bachelor's degree in Game Development, Computer Science, or a related field.",
+      level3: "Create game prototypes and gain experience in game design.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["DigiPen Institute of Technology", "Full Sail University"],
+    jobfields: [ {field: "Game Designer", certifications: ["Unity Certified Developer", "Certified Game Developer (CGD)"], },
+ {field: "Game Programmer", certifications: ["Unity Certified Developer", "Certified Game Developer (CGD)"], },
+ {field: "Game Artist", certifications: ["Unity Certified Developer", "Certified Game Developer (CGD)"],},],
+   
+    description: "Game developers design, create, and test video games for various platforms.",
+    jobOutlook: "The gaming industry offers exciting opportunities for creative developers.",
+    topSkills: [
+      "Programming (C++, C#, Java, etc.)",
+      "Game Design",
+      "3D Modeling and Animation",
+    ],
+    relatedCareers: ["Game Tester", "Game Producer", "Level Designer"],
+  },{
+    title: "Geologist",
+    path: {
+      level1: "Complete 10th grade with a focus on science subjects.",
+      level2: "Pursue a Bachelor's degree in Geology or Earth Sciences.",
+      level3: "Obtain a Master's degree for specialized roles.",
+    },
+    avgsal: "₹6,00,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "University of Delhi"],
+    jobfields: [
+      {field:  "Petroleum Geologist",certifications: ["Certified Professional Geologist (CPG)", "Geoscientist-in-Training (GIT)"],},
+       {field: "Environmental Consultant",certifications: ["Certified Professional Geologist (CPG)", "Geoscientist-in-Training (GIT)"],},
+       {field: "Seismologist",certifications: ["Certified Professional Geologist (CPG)", "Geoscientist-in-Training (GIT)"],},
+    ],
+    
+    description: "Geologists study the Earth's processes, materials, and history.",
+    jobOutlook: "Geologists are vital for industries like oil exploration and environmental consulting.",
+    topSkills: [
+      "Fieldwork",
+      "Data Analysis",
+      "Geological Mapping",
+    ],
+    relatedCareers: ["Environmental Scientist", "Oceanographer", "Mining Engineer"],
+  },
+  {
+    title: "Graphic Designer",
+    path: {
+      level1: "Develop artistic skills and creativity from a young age.",
+      level2: "Pursue a Bachelor's degree in Graphic Design or a related field.",
+      level3: "Build a strong portfolio of design projects.",
+    },
+    avgsal: "₹4,50,000 per annum",
+    bestcollege: ["National Institute of Design (NID)", "Pearl Academy"],
+    jobfields: [
+       {field: "UI/UX Designer",certifications: ["Adobe Certified Expert (ACE)", "Certified Graphic Designer (CGD)"],},
+      { field: "Illustrator",certifications: ["Adobe Certified Expert (ACE)", "Certified Graphic Designer (CGD)"],},
+      { field: "Art Director",certifications: ["Adobe Certified Expert (ACE)", "Certified Graphic Designer (CGD)"],},
+    ],
+    
+    description: "Graphic designers create visual content for various media.",
+    jobOutlook: "The demand for graphic designers is high in advertising, web design, and multimedia industries.",
+    topSkills: [
+      "Adobe Creative Suite",
+      "Typography",
+      "Creativity",
+    ],
+    relatedCareers: ["Web Designer", "Animator", "Digital Marketing Specialist"],
+  },
+  {
+    title: "Human Resources Manager",
+    path: {
+      level1: "Complete 10th grade with good communication skills.",
+      level2: "Pursue a Bachelor's degree in Human Resources Management or a related field.",
+      level3: "Gain experience in HR roles and obtain relevant certifications.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["Tata Institute of Social Sciences (TISS)", "Xavier School of Human Resource Management (XLRI)"],
+    jobfields: [
+       {field: "HR Director",certifications: ["Professional in Human Resources (PHR)", "Senior Professional in Human Resources (SPHR)"],},
+      { field: "Talent Acquisition Manager",certifications: ["Professional in Human Resources (PHR)", "Senior Professional in Human Resources (SPHR)"],},
+       {field: "Compensation and Benefits Analyst",certifications: ["Professional in Human Resources (PHR)", "Senior Professional in Human Resources (SPHR)"],},
+    ],
+    
+    description: "HR managers oversee employee recruitment, benefits, and relations.",
+    jobOutlook: "HR managers are essential in all organizations for workforce management.",
+    topSkills: [
+      "Communication",
+      "Employee Relations",
+      "Recruitment",
+    ],
+    relatedCareers: ["Training and Development Manager", "Labor Relations Specialist", "Organizational Development Consultant"],
+  },
+  {
+    title: "Interior Designer",
+    path: {
+      level1: "Develop an eye for design and aesthetics.",
+      level2: "Pursue a Bachelor's degree in Interior Design or Interior Architecture.",
+      level3: "Build a portfolio of interior design projects.",
+    },
+    avgsal: "₹5,00,000 per annum",
+    bestcollege: ["National Institute of Design (NID)", "Sir J.J. College of Architecture"],
+    jobfields: [
+       {field: "Residential Interior Designer",certifications: ["Certified Interior Designer (CID)", "LEED Accredited Professional (LEED AP)"],},
+       {field: "Commercial Interior Designer",certifications: ["Certified Interior Designer (CID)", "LEED Accredited Professional (LEED AP)"],},
+       {field: "Sustainable Design Consultant",certifications: ["Certified Interior Designer (CID)", "LEED Accredited Professional (LEED AP)"],},
+    ],
+    
+    description: "Interior designers plan and create functional and aesthetically pleasing interior spaces.",
+    jobOutlook: "Interior designers are in demand for residential and commercial projects.",
+    topSkills: [
+      "Spatial Awareness",
+      "Creativity",
+      "Color Theory",
+    ],
+    relatedCareers: ["Architect", "Furniture Designer", "Lighting Designer"],
+  },
+  {
+    title: "Lawyer",
+    path: {
+      level1: "Excel in critical thinking and communication skills in school.",
+      level2: "Pursue a Bachelor's degree in Law (LLB) from a recognized university.",
+      level3: "Pass the bar exam and gain experience in legal practice.",
+    },
+    avgsal: "₹7,20,000 per annum",
+    bestcollege: ["National Law School of India University (NLSIU)", "National Academy of Legal Studies and Research (NALSAR)"],
+    jobfields: [ {field: "Corporate Lawyer", certifications: ["Bar Council of India (BCI) Certification"],}, 
+{field:  "Criminal Defense Attorney", certifications: ["Bar Council of India (BCI) Certification"],}, 
+ {field: "Family Lawyer", certifications: ["Bar Council of India (BCI) Certification"],},],
+   
+    description: "Lawyers provide legal advice, represent clients, and advocate for justice.",
+    jobOutlook: "Lawyers are needed in various fields, including corporate law, criminal law, and civil litigation.",
+    topSkills: [
+      "Legal Research",
+      "Negotiation",
+      "Analytical Thinking",
+    ],
+    relatedCareers: ["Judge", "Legal Consultant", "Paralegal"],
+  },{
+    title: "Librarian",
+    path: {
+      level1: "Complete 10th grade with a focus on literature and research skills.",
+      level2: "Pursue a Bachelor's degree in Library Science or Information Science.",
+      level3: "Obtain a Master's degree in Library and Information Science for advanced roles.",
+    },
+    avgsal: "₹3,60,000 per annum",
+    bestcollege: ["National Institute of Fashion Technology (NIFT)", "Delhi Public Library Professional Training Course"],
+    jobfields: [ {field: "Reference Librarian", certifications: ["Library Support Staff Certification", "Certified Librarian (CL)"],},
+{ field: "Archivist", certifications: ["Library Support Staff Certification", "Certified Librarian (CL)"],} ,
+{field: "Library Director",certifications: ["Library Support Staff Certification", "Certified Librarian (CL)"],},],
+    
+    description: "Librarians manage and organize library resources and assist patrons.",
+    jobOutlook: "Librarians are essential in educational institutions, public libraries, and research organizations.",
+    topSkills: [
+      "Information Literacy",
+      "Cataloging",
+      "Customer Service",
+    ],
+    relatedCareers: ["Archivist", "Researcher", "Information Specialist"],
+  },
+  {
+    title: "Marine Biologist",
+    path: {
+      level1: "Complete 10th grade with a strong interest in biology and marine life.",
+      level2: "Pursue a Bachelor's degree in Marine Biology or a related field.",
+      level3: "Gain fieldwork experience and consider a Master's or Ph.D. for research roles.",
+    },
+    avgsal: "₹6,50,000 per annum",
+    bestcollege: ["Tata Institute of Social Sciences (TISS)", "Madras Christian College (MCC)"],
+    jobfields: [ {field: "Marine Ecologist",certifications: ["Certified Marine Biologist (CMB)", "PADI Advanced Open Water Diver"],} ,
+ {field: "Marine Conservationist",certifications: ["Certified Marine Biologist (CMB)", "PADI Advanced Open Water Diver"],} , 
+{field: "Aquarist",certifications: ["Certified Marine Biologist (CMB)", "PADI Advanced Open Water Diver"],},],
+    
+    description: "Marine biologists study ocean ecosystems and marine organisms.",
+    jobOutlook: "Marine biologists are needed for environmental conservation and research on aquatic life.",
+    topSkills: [
+      "Field Research",
+      "Scuba Diving",
+      "Marine Conservation",
+    ],
+    relatedCareers: ["Environmental Scientist", "Aquatic Biologist", "Oceanographer"],
+  },
+  {
+    title: "Marketing Manager",
+    path: {
+      level1: "Develop communication and creative skills from a young age.",
+      level2: "Pursue a Bachelor's degree in Marketing, Business, or a related field.",
+      level3: "Gain marketing experience and consider an MBA for leadership roles.",
+    },
+    avgsal: "₹9,00,000 per annum",
+    bestcollege: ["Indian School of Business (ISB)", "Symbiosis Institute of Business Management (SIBM)"],jobfields: [ {field: "Digital Marketing Manager",certifications: ["Certified Marketing Executive (CME)", "Google Ads Certification"],}
+ ,{field:  "Brand Manager", certifications: ["Certified Marketing Executive (CME)", "Google Ads Certification"],}
+ ,{field: "Market Research Analyst", certifications: ["Certified Marketing Executive (CME)", "Google Ads Certification"],},],
+   
+    description: "Marketing managers plan and execute marketing campaigns and strategies.",
+    jobOutlook: "Marketing managers are crucial for promoting products and services in competitive markets.",
+    topSkills: [
+      "Strategic Planning",
+      "Digital Marketing",
+      "Market Analysis",
+    ],
+    relatedCareers: ["Advertising Manager", "Public Relations Specialist", "Sales Manager"],
+  },
+  {
+    title: "Mechanical Engineer",
+    path: {
+      level1: "Complete 10th grade with a focus on mathematics and science.",
+      level2: "Pursue a Bachelor's degree in Mechanical Engineering.",
+      level3: "Gain engineering experience and consider a Master's degree for specialization.",
+    },
+    avgsal: "₹6,00,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "National Institute of Technology (NIT)"],
+    jobfields: [ {field: "Automotive Engineer",certifications: ["Certified SolidWorks Associate (CSWA)", "Certified Manufacturing Engineer (CMfgE)"],},{ 
+ field: "Product Design Engineer",certifications: ["Certified SolidWorks Associate (CSWA)", "Certified Manufacturing Engineer (CMfgE)"], },
+ {field: "Aerospace Engineer",certifications: ["Certified SolidWorks Associate (CSWA)", "Certified Manufacturing Engineer (CMfgE)"],},],
+    
+    description: "Mechanical engineers design and develop mechanical systems and products.",
+    jobOutlook: "Mechanical engineers are in demand in industries like automotive, aerospace, and manufacturing.",
+    topSkills: [
+      "Mechanical Design",
+      "Thermodynamics",
+      "CAD Software",
+    ],
+    relatedCareers: ["Civil Engineer", "Electrical Engineer", "Aerospace Engineer"],
+  },
+  {
+    title: "Musician",
+    path: {
+      level1: "Begin learning a musical instrument or singing at a young age.",
+      level2: "Pursue formal music education or training in your chosen instrument or genre.",
+      level3: "Build a portfolio and gain performing experience.",
+    },
+    avgsal: "Varies widely; from ₹2,00,000 to ₹50,00,000+ per annum",
+    bestcollege: ["Berklee College of Music", "Juilliard School"],
+    jobfields: [ {field: "Music Composer",certifications: ["Music Performance Diploma", "Music Theory Certification"],},{ field:  "Singer-Songwriter",  },{field: "Session Musician",certifications: ["Music Performance Diploma", "Music Theory Certification"],},],
+    certifications: ["Music Performance Diploma", "Music Theory Certification"],
+    description: "Musicians create and perform music for various audiences and purposes.",
+    jobOutlook: "Musicians can have diverse careers in the music industry, from live performances to composition.",
+    topSkills: [
+      "Instrument Proficiency",
+      "Songwriting",
+      "Music Production",
+    ],
+    relatedCareers: ["Music Producer", "Music Teacher", "Sound Engineer"],
+  },
+ {
+    title: "Nurse",
+    path: {
+      level1: "Complete 10th grade with good marks and focus on biology and chemistry.",
+      level2: "Pursue a Bachelor of Science in Nursing (BSN) degree.",
+      level3: "Pass the National Council Licensure Examination for Registered Nurses (NCLEX-RN).",
+    },
+    avgsal: "₹6,00,000 per annum",
+    bestcollege: ["All India Institute of Medical Sciences (AIIMS)", "Christian Medical College (CMC), Vellore"],
+    jobfields: [{ field: "Registered Nurse", certifications: ["Basic Life Support (BLS) Certification", "Advanced Cardiovascular Life Support (ACLS) Certification"], },{field:  "Nurse Practitioner",  certifications: ["Basic Life Support (BLS) Certification", "Advanced Cardiovascular Life Support (ACLS) Certification"],},{ field: "Critical Care Nurse", certifications: ["Basic Life Support (BLS) Certification", "Advanced Cardiovascular Life Support (ACLS) Certification"],},],
+   
+    description: "Nurses provide patient care, educate patients, and support doctors in healthcare settings.",
+    jobOutlook: "Nurses are in high demand worldwide, especially in healthcare and hospital settings.",
+    topSkills: [
+      "Patient Care",
+      "Medical Knowledge",
+      "Communication",
+    ],
+    relatedCareers: ["Physician Assistant", "Nurse Anesthetist", "Clinical Nurse Specialist"],
+  },
+  {
+    title: "Paramedic",
+    path: {
+      level1: "Complete 10th grade with a focus on biology and emergency response.",
+      level2: "Enroll in a Paramedic training program or course.",
+      level3: "Obtain certification as a Paramedic and gain experience in emergency medical services (EMS).",
+    },
+    avgsal: "₹3,50,000 per annum",
+    bestcollege: ["National Institute of Open Schooling (NIOS)"],
+    jobfields: [ {field: "Paramedic Technician",  certifications: ["Certified Paramedic (NREMT-P)", "Advanced Cardiac Life Support (ACLS) Certification"],},{ field:  "Emergency Medical Technician (EMT)",  certifications: ["Certified Paramedic (NREMT-P)", "Advanced Cardiac Life Support (ACLS) Certification"],},{ field:  "Flight Paramedic",  certifications: ["Certified Paramedic (NREMT-P)", "Advanced Cardiac Life Support (ACLS) Certification"],},],
+  
+    description: "Paramedics provide emergency medical care and transportation to individuals in crisis.",
+    jobOutlook: "Paramedics are essential in emergency response teams and ambulance services.",
+    topSkills: [
+      "Emergency Response",
+      "Medical Procedures",
+      "Stress Management",
+    ],
+    relatedCareers: ["Emergency Room Nurse", "Firefighter", "Physician"],
+  },
+  {
+    title: "Pharmacist",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in biology and chemistry.",
+      level2: "Pursue a Bachelor of Pharmacy (B.Pharm) degree.",
+      level3: "Obtain a Pharm.D (Doctor of Pharmacy) degree for advanced roles.",
+    },
+    avgsal: "₹4,80,000 per annum",
+    bestcollege: ["Manipal College of Pharmaceutical Sciences", "Jamia Hamdard University"],
+    jobfields: [ {field: "Retail Pharmacist", certifications: ["Registered Pharmacist License", "Board Certified Pharmacotherapy Specialist (BCPS)"],},{ field:  "Clinical Pharmacist", certifications: ["Registered Pharmacist License", "Board Certified Pharmacotherapy Specialist (BCPS)"],},{ field:  "Pharmaceutical Researcher", certifications: ["Registered Pharmacist License", "Board Certified Pharmacotherapy Specialist (BCPS)"],},],
+   
+    description: "Pharmacists dispense medications, provide healthcare advice, and ensure patient safety.",
+    jobOutlook: "Pharmacists play a crucial role in the healthcare system, with opportunities in various settings.",
+    topSkills: [
+      "Medication Management",
+      "Patient Counseling",
+      "Pharmacology Knowledge",
+    ],
+    relatedCareers: ["Medical Sales Representative", "Pharmacy Technician", "Clinical Research Associate"],
+  },
+  {
+    title: "Photographer",
+    path: {
+      level1: "Start exploring photography as a hobby and learn about different camera equipment.",
+      level2: "Pursue formal photography education or attend workshops.",
+      level3: "Build a portfolio, gain experience, and establish a personal photography style.",
+    },
+    avgsal: "₹3,00,000 per annum",
+    bestcollege: ["National Institute of Design (NID)", "Film and Television Institute of India (FTII)"],
+    jobfields: [ {field: "Portrait Photographer",certifications: ["Professional Photography Certification", "Adobe Certified Expert (ACE)"],},{ field:  "Wedding Photographer",certifications: ["Professional Photography Certification", "Adobe Certified Expert (ACE)"], },{field:  "Photojournalist",certifications: ["Professional Photography Certification", "Adobe Certified Expert (ACE)"],},],
+    
+    description: "Photographers capture images and moments using cameras and creative techniques.",
+    jobOutlook: "Photographers are in demand for various events, publications, and artistic endeavors.",
+    topSkills: [
+      "Photography Techniques",
+      "Image Editing",
+      "Creativity",
+    ],
+    relatedCareers: ["Graphic Designer", "Videographer", "Art Director"],
+  },
+  {
+    title: "Pilot",
+    path: {
+      level1: "Complete 10th grade with strong mathematics and physics skills.",
+      level2: "Enroll in a flight training program or pursue a Bachelor's degree in Aviation.",
+      level3: "Earn a Commercial Pilot License (CPL) and accumulate flight hours for commercial flying.",
+    },
+    avgsal: "₹11,00,000 per annum",
+    bestcollege: ["Indira Gandhi Rashtriya Uran Akademi (IGRUA)", "National Flying Training Institute (NFTI)"],
+    jobfields: [ {field: "Commercial Pilot",certifications: ["Commercial Pilot License (CPL)", "Airline Transport Pilot License (ATPL)"], },{ field: "Airline Pilot", certifications: ["Commercial Pilot License (CPL)", "Airline Transport Pilot License (ATPL)"],}, {field: "Flight Instructor",certifications: ["Commercial Pilot License (CPL)", "Airline Transport Pilot License (ATPL)"],},],
+    
+    description: "Pilots operate aircraft, ensuring the safety and smooth travel of passengers and cargo.",
+    jobOutlook: "Pilots are essential in the aviation industry, with opportunities in domestic and international airlines.",
+    topSkills: [
+      "Flight Navigation",
+      "Aircraft Handling",
+      "Crisis Management",
+    ],
+    relatedCareers: ["Aircraft Dispatcher", "Air Traffic Controller", "Aviation Manager"],
+  },
+{
+    title: "Police Officer",
+    path: {
+      level1: "Complete 10th grade with good marks.",
+      level2: "Earn a high school diploma or equivalent.",
+      level3: "Enroll in a police academy or law enforcement training program.",
+    },
+    avgsal: "₹6,50,000 per annum",
+    bestcollege: ["National Police Academy (NPA)", "Sardar Vallabhbhai Patel National Police Academy"],
+    jobfields: [ {field: "Patrol Officer", certifications: ["Basic Law Enforcement Certification", "Criminal Investigation Certification"],},{  field: "Detective", certifications: ["Basic Law Enforcement Certification", "Criminal Investigation Certification"],},  {field: "K-9 Officer", certifications: ["Basic Law Enforcement Certification", "Criminal Investigation Certification"],},],
+   
+    description: "Police Officers enforce laws, protect citizens, and maintain public safety.",
+    jobOutlook: "Police Officers are essential for maintaining law and order in communities.",
+    topSkills: [
+      "Criminal Justice",
+      "Critical Thinking",
+      "Physical Fitness",
+    ],
+    relatedCareers: ["Correctional Officer", "Private Investigator", "Security Guard"],
+  },
+  {
+    title: "Psychologist",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in science and psychology.",
+      level2: "Earn a Bachelor's degree in Psychology.",
+      level3: "Pursue a Master's or Doctoral degree in Psychology for specialized roles.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["Delhi University", "Tata Institute of Social Sciences (TISS)"],
+    jobfields: [ {field: "Clinical Psychologist",certifications: ["Licensed Psychologist", "Certified Clinical Psychologist"],},{  field: "Counseling Psychologist",certifications: ["Licensed Psychologist", "Certified Clinical Psychologist"],},{  field: "Industrial-Organizational Psychologist",certifications: ["Licensed Psychologist", "Certified Clinical Psychologist"],},],
+    
+    description: "Psychologists study behavior, provide therapy, and conduct research on mental processes.",
+    jobOutlook: "Psychologists are in demand for mental health support and research in various sectors.",
+    topSkills: [
+      "Empathy",
+      "Active Listening",
+      "Research and Analysis",
+    ],
+    relatedCareers: ["Psychiatrist", "Social Worker", "School Counselor"],
+  },
+  {
+    title: "Sales Representative",
+    path: {
+      level1: "Complete 10th grade and develop communication and interpersonal skills.",
+      level2: "Earn a Bachelor's degree in Business or a related field.",
+      level3: "Gain sales experience and product knowledge.",
+    },
+    avgsal: "₹4,00,000 per annum",
+    bestcollege: ["Indian Institute of Management (IIM)", "XLRI - Xavier School of Management"],
+    jobfields: [ {field: "Sales Associate", certifications: ["Certified Sales Professional (CSP)", "Salesforce Certified Sales Cloud Consultant"],},{  field: "Account Executive", certifications: ["Certified Sales Professional (CSP)", "Salesforce Certified Sales Cloud Consultant"],},{ field:  "Medical Sales Representative" ,certifications: ["Certified Sales Professional (CSP)", "Salesforce Certified Sales Cloud Consultant"],}],
+   
+    description: "Sales Representatives sell products or services to customers and build client relationships.",
+    jobOutlook: "Sales Representatives are essential for driving revenue and growth in businesses.",
+    topSkills: [
+      "Communication",
+      "Negotiation",
+      "Product Knowledge",
+    ],
+    relatedCareers: ["Marketing Manager", "Business Development Manager", "Customer Service Representative"],
+  },
+  {
+    title: "Scientist",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in science subjects.",
+      level2: "Earn a Bachelor's degree in a specific scientific field.",
+      level3: "Pursue a Master's or Doctoral degree for advanced research roles.",
+    },
+    avgsal: "₹9,00,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "Tata Institute of Fundamental Research (TIFR)"],
+    jobfields: [ {field: "Research Scientist",certifications: ["Ph.D. in the respective scientific field", "Project Management Professional (PMP)"],},{ field:  "Biologist",}  ,{field: "Chemist",certifications: ["Ph.D. in the respective scientific field", "Project Management Professional (PMP)"],},],
+    
+    description: "Scientists conduct research, experiments, and investigations to advance knowledge.",
+    jobOutlook: "Scientists contribute to discoveries and innovations across various scientific disciplines.",
+    topSkills: [
+      "Research and Analysis",
+      "Data Interpretation",
+      "Critical Thinking",
+    ],
+    relatedCareers: ["Research Assistant", "Laboratory Technician", "Data Analyst"],
+  },
+  {
+    title: "Social Worker",
+    path: {
+      level1: "Complete 10th grade and develop empathy and interpersonal skills.",
+      level2: "Earn a Bachelor's degree in Social Work (BSW) or a related field.",
+      level3: "Pursue a Master's in Social Work (MSW) for advanced practice.",
+    },
+    avgsal: "₹3,60,000 per annum",
+    bestcollege: ["Tata Institute of Social Sciences (TISS)", "Jamia Millia Islamia University"],
+    jobfields: [{ field: "Clinical Social Worker", certifications: ["Licensed Clinical Social Worker (LCSW)", "Certified Advanced Social Work Case Manager (C-ASWCM)"],},{ field:  "School Social Worker", certifications: ["Licensed Clinical Social Worker (LCSW)", "Certified Advanced Social Work Case Manager (C-ASWCM)"],},{  field: "Mental Health Counselor" ,certifications: ["Licensed Clinical Social Worker (LCSW)", "Certified Advanced Social Work Case Manager (C-ASWCM)"],},],
+   
+    description: "Social Workers support individuals and communities facing social and emotional challenges.",
+    jobOutlook: "Social Workers play a crucial role in enhancing people's well-being and access to resources.",
+    topSkills: [
+      "Empathy",
+      "Crisis Intervention",
+      "Advocacy",
+    ],
+    relatedCareers: ["Psychologist", "Counselor", "Human Resources Manager"],
+  },{
+    title: "Software Developer",
+    path: {
+      level1: "Complete 10th grade with strong math and programming skills.",
+      level2: "Earn a Bachelor's degree in Computer Science or related field.",
+      level3: "Acquire programming languages proficiency and work on software projects.",
+    },
+    avgsal: "₹8,00,000 per annum",
+    bestcollege: ["Indian Institutes of Technology (IITs)", "National Institute of Technology (NITs)"],
+    jobfields: [ {field: "Full Stack Developer",certifications: ["Certified Software Development Associate (CSDA)", "AWS Certified Developer - Associate"],},{ field:  "Mobile App Developer",certifications: ["Certified Software Development Associate (CSDA)", "AWS Certified Developer - Associate"],}, {field:  "Game Developer",certifications: ["Certified Software Development Associate (CSDA)", "AWS Certified Developer - Associate"],},],
+    
+    description: "Software Developers create and maintain software applications for various purposes.",
+    jobOutlook: "The demand for Software Developers is high in the tech industry.",
+    topSkills: [
+      "Programming (Java, Python, etc.)",
+      "Problem Solving",
+      "Collaboration",
+    ],
+    relatedCareers: ["Web Developer", "Data Analyst", "Quality Assurance Tester"],
+  },
+  {
+    title: "Teacher",
+    path: {
+      level1: "Complete 10th grade with good marks.",
+      level2: "Pursue a Bachelor's degree in Education or a specific subject.",
+      level3: "Earn a teaching certificate and gain classroom experience.",
+    },
+    avgsal: "₹4,20,000 per annum",
+    bestcollege: ["Jamia Millia Islamia University", "Tata Institute of Social Sciences (TISS)"],
+    jobfields: [{ field: "Elementary School Teacher", certifications: ["Teacher Certification", "National Board Certification (NBCT)"],  },{field: "High School Teacher",},{  field: "College Professor"},],
+   
+    description: "Teachers educate students and help them develop skills and knowledge.",
+    jobOutlook: "Teachers are essential for shaping the future through education.",
+    topSkills: [
+      "Communication",
+      "Adaptability",
+      "Patience",
+    ],
+    relatedCareers: ["School Counselor", "Education Administrator", "Tutor"],
+  },
+  {
+    title: "Veterinarian",
+    path: {
+      level1: "Complete 10th grade with a strong foundation in science subjects.",
+      level2: "Earn a Bachelor's degree in Veterinary Science (BVSc).",
+      level3: "Pursue a Doctor of Veterinary Medicine (DVM) degree and obtain a license.",
+    },
+    avgsal: "₹6,00,000 per annum",
+    bestcollege: ["Madras Veterinary College", "Bombay Veterinary College"],
+    jobfields: [ {field: "Small Animal Veterinarian",},{ field:  "Large Animal Veterinarian",},{ field:  "Wildlife Veterinarian"}],
+    certifications: ["Veterinary License", "Board Certification in Veterinary Specialties"],
+    description: "Veterinarians care for animals' health, diagnose illnesses, and perform surgeries.",
+    jobOutlook: "Veterinarians play a vital role in ensuring animal welfare and public health.",
+    topSkills: [
+      "Animal Handling",
+      "Medical Knowledge",
+      "Empathy",
+    ],
+    relatedCareers: ["Zoologist", "Animal Trainer", "Animal Shelter Manager"],
+  },
+  {
+    title: "Web Developer",
+    path: {
+      level1: "Complete 10th grade with good marks and strong computer skills.",
+      level2: "Earn a Bachelor's degree in Web Development or Computer Science.",
+      level3: "Build a portfolio of web projects and gain expertise in web technologies.",
+    },
+    avgsal: "₹6,50,000 per annum",
+    bestcollege: ["National Institute of Fashion Technology (NIFT)", "Symbiosis Institute of Computer Studies and Research (SICSR)"],
+    jobfields: [ {field: "Front-End Developer",certifications: ["Certified Web Developer (CIW)", "AWS Certified Developer - Associate"],},{  field: "Back-End Developer",certifications: ["Certified Web Developer (CIW)", "AWS Certified Developer - Associate"],},{  field: "Full Stack Web Developer",certifications: ["Certified Web Developer (CIW)", "AWS Certified Developer - Associate"],},],
+    
+    description: "Web Developers create and maintain websites and web applications.",
+    jobOutlook: "The demand for Web Developers is high in the digital era.",
+    topSkills: [
+      "HTML, CSS, JavaScript",
+      "Problem Solving",
+      "Creativity",
+    ],
+    relatedCareers: ["Software Developer", "UI/UX Designer", "Digital Marketing Specialist"],
+  },
+  {
+    title: "Writer",
+    path: {
+      level1: "Complete 10th grade with a passion for writing and strong language skills.",
+      level2: "Pursue a Bachelor's degree in English, Journalism, or related field.",
+      level3: "Gain writing experience through internships and freelancing.",
+    },
+    avgsal: "₹4,80,000 per annum",
+    bestcollege: ["University of Delhi", "Jamia Millia Islamia University"],
+    jobfields: [
+{ field: "Author", certifications: ["Creative Writing Certification", "Certified Journalism Professional (CJP)"],},{ field:  "Journalist",  certifications: ["Creative Writing Certification", "Certified Journalism Professional (CJP)"],},{field:  "Content Writer", certifications: ["Creative Writing Certification"," (CJP)"],},],
+description: "Writers create written content for books, articles, websites, and more.",
+    jobOutlook: "Writers are in demand for producing engaging and informative content.",
+    topSkills: [
+      "Writing",
+      "Research",
+      "Creativity",
+    ],
+    relatedCareers: ["Editor", "Copywriter", "Technical Writer"],
+  },
+  {
+    title: "Zoologist",
+    path: {
+      level1: "Complete 10th grade with a strong interest in biology and wildlife.",
+      level2: "Earn a Bachelor's degree in Zoology or related field.",
+      level3: "Pursue a Master's or Ph.D. for research positions.",
+    },
+    avgsal: "₹5,20,000 per annum",
+    bestcollege: ["University of Mumbai", "University of Pune"],
+    jobfields: [ 
+{field: "Wildlife Biologist",certifications: ["Certified Wildlife Biologist", "Zoology Teacher Certification"], }, {field: "Conservationist",certifications: ["Certified Wildlife Biologist", "Zoology Teacher Certification"],}, {field:  "Zoo Curator",certifications: ["Certified Wildlife Biologist", "Zoology Teacher Certification"],},],
+   
+    description: "Zoologists study animals, their behavior, and their habitats.",
+    jobOutlook: "Zoologists contribute to wildlife conservation and research.",
+    topSkills: [
+      "Research",
+      "Data Analysis",
+      "Fieldwork",
+    ],
+    relatedCareers: ["Veterinarian", "Wildlife Photographer", "Marine Biologist"],
+  },
+        ];
+
+        
+        function displayResults() {
+            const resultsContainer = document.getElementById('results-container');
+
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+
+            if (query) {
+                const filteredResults = arr.filter(item => {
+                  
+                    return item.title.toLowerCase().includes(query.toLowerCase());
+                });
+
+                if (filteredResults.length === 0) {
+                    
+                    resultsContainer.innerHTML = '<p>No results found.</p>';
+                } else {
+                    
+                    filteredResults.forEach(result => {
+                        const resultDiv = document.createElement('div');
+                        resultDiv.classList.add('result');
+
+                        const title = document.createElement('h2');
+                        title.textContent = result.title;
+
+                        
+                        const pathDetails = document.createElement("ul");
+                        for (const level in result.path) {
+                            if (result.path.hasOwnProperty(level)) {
+                                const pathItem = document.createElement("li");
+                                pathItem.innerHTML = `<strong>${level}:</strong> ${result.path[level]}`;
+                                pathDetails.appendChild(pathItem);
+                            }
+                        }
+
+                        const avgsal = document.createElement('p');
+                        avgsal.textContent = 'Average Salary: ' + result.avgsal;
+
+                        const bestcollege = document.createElement('p');
+                        bestcollege.textContent = 'Best College: ' + result.bestcollege;
+
+                       
+                        const jobFieldsDiv = document.createElement('div');
+                        jobFieldsDiv.classList.add('job-fields');
+                        result.jobfields.forEach(jobField => {
+                            const jobFieldDiv = document.createElement('div');
+                            jobFieldDiv.classList.add('job-field');
+
+                            const jobFieldTitle = document.createElement('h3');
+                            jobFieldTitle.textContent = jobField.field;
+
+                            const certificationsList = document.createElement('ul');
+                            jobField.certifications.forEach(certification => {
+                                const certificationItem = document.createElement('li');
+                                certificationItem.textContent = certification;
+                                certificationsList.appendChild(certificationItem);
+                            });
+
+                            jobFieldDiv.appendChild(jobFieldTitle);
+                            jobFieldDiv.appendChild(certificationsList);
+                            jobFieldsDiv.appendChild(jobFieldDiv);
+                        });
+
+                        const description = document.createElement('p');
+                        description.textContent = 'Description: ' + result.description;
+
+                        
+                        resultDiv.appendChild(title);
+                        resultDiv.appendChild(pathDetails);
+                        resultDiv.appendChild(avgsal);
+                        resultDiv.appendChild(bestcollege);
+                        resultDiv.appendChild(jobFieldsDiv);
+                        resultDiv.appendChild(description);
+
+                        resultsContainer.appendChild(resultDiv);
+                    });
+                }
+            } else {
+                
+                resultsContainer.innerHTML = '<p>No search query provided.</p>';
+            }
+        }
+
+       
+        window.onload = displayResults;
+
+    </script>
+</body>
+</html>

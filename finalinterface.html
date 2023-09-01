@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my project</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+           /*l(https://png.pngtree.com/thumb_back/fh260/background/20190221/ourmid/pngtree-simple-e-commerce-jobs-career-image_21503.jpg);
+background-image:url('file:///C:/Users/hp/OneDrive/Desktop/project%20-c/careerpath.jpg');*/ background-image: url(https://media.istockphoto.com/id/1161949872/vector/business-planning.jpg?s=612x612&w=0&k=20&c=nTge81NspZfa7Hcw2xDYjXUo5Dizja5DFfvSv_P5f5M=);
+
+
+            background-repeat: no-repeat;
+            /*background-position: center;*/
+            background-position: center top 100px; 
+            background-size: cover;
+            background-color: rgba(2, 255, 255, 1);
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #5F7E0D;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            text-align: center;
+            padding: 16px 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        li a:hover {
+            background-color: black;
+        }
+
+        #search_container {
+            text-align: center;
+            padding-top: 100px; 
+        }
+
+        #search-bar {
+            width: 500px;
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            display: inline-block; 
+        }#search-card {
+            width: 700px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(20, 0, 0, 1);
+            display: inline-block;
+background-color:#91DAED;
+        }
+
+        #button {
+            width: 70px;
+            padding: 15px;
+            font-size: 12px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 20px;
+            justify-content: center;
+        }
+
+        
+        @keyframes typing{
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        h1 {
+            color: #881E3E;
+            text-align: center;
+            font-size: 72px;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 4s steps(72, end) 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="about3.html">About Us</a></li>
+        <li><a href="">Settings</a></li>
+    </ul>
+    <h1>CAREER PATH EXPLORER</h1>
+    <div id="search_container">
+<div id="search-card">
+ <form id="search-form" action="results.html" method="GET">
+        
+        <input type="text" id="search-bar" name="query" placeholder="find your path here">
+        <input type="submit" value="Search">
+    </form>
+    </div></div>
+</body>
+
+</html>
